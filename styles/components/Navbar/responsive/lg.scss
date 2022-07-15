@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    grid-template-areas: "logo input contact";
+    div {
+      &:nth-child(1) {
+        grid-area: logo;
+      }
+      &:nth-child(2) {
+        grid-area: contact;
+      }
+      &:nth-child(3) {
+        grid-area: input;
+      }
+    }
+  }
+}

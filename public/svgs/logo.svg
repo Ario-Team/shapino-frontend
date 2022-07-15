@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="9 6 24.667 24.468" width="24.667px" height="24.468px" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="Ellipse_1" x="0" y="0" width="38" height="38" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g filter="url(#Ellipse_1)">
+    <circle id="Ellipse_1-2" data-name="Ellipse 1" cx="10" cy="10" r="10" transform="translate(9 6)" fill="#3f8cff"/>
+  </g>
+  <path id="Polygon_1-2" data-name="Polygon 1" d="M7.132,1.519a1,1,0,0,1,1.736,0L15.145,12.5a1,1,0,0,1-.868,1.5H1.723a1,1,0,0,1-.868-1.5Z" transform="matrix(-0.97437, -0.224951, 0.224951, -0.97437, 31.219999, 31.620001)" fill="#abb9cf" opacity="0.65"/>
+</svg>

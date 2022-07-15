@@ -6,7 +6,12 @@ module.exports = {
     "./layouts/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        kalameh: ["KalamehWeb", "sans-serif"],
+        "iran-yekan": ["iranyekan", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
