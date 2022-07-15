@@ -46,7 +46,7 @@ const MenuItem = ({ name }) => {
   return (
     <li
       className={`font-iran-yekan font-normal flex flex-row items-center gap-2 text-black transition-opacity duration-300 cursor-pointer opacity-80 hover:opacity-100 ${
-        isCategory ? "hidden" : " "
+        isCategory ? "hidden lg:flex" : " "
       }`}
     >
       {isCategory ? <HiMenuAlt1 className="rotate-180" /> : null}
