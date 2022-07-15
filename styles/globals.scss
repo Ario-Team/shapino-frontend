@@ -3,3 +3,10 @@
 @tailwind utilities;
 
 @import "./fonts/index.module.scss";
+
+html,
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
