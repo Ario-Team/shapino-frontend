@@ -13,7 +13,7 @@ import samandehiSVG from "../public/svgs/samandehi.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-white rounded-t-2xl h-max px-2">
+    <footer className="bg-white rounded-t-2xl h-max">
       <div className="grid grid-cols-2 place-items-center gap-y-10 py-6 pt-14 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         <IconBox src={deliverySVG} text="تحویل اکسپرس" />
         <IconBox src={supporterSVG} text="پشتیبانی 24 ساعته" />
@@ -71,10 +71,10 @@ const Footer = () => {
             </span>
             <div className="w-full relative mt-6">
               <input
-                className="peer w-full bg-gray-100 py-4 rounded-xl font-iran-yekan font-normal text-base pr-6"
+                className="peer w-full outline-none bg-gray-100 py-4 rounded-xl font-iran-yekan font-normal text-base pr-6 border-transparent border-2 transition-colors duration-300 hover:border-gray-400 focus:border-gray-400"
                 placeholder="ایمیل خود را وارد کنید"
               />
-              <FiMail className="text-gray-300 absolute text-2xl left-4 top-4" />
+              <FiMail className="text-gray-300 absolute text-2xl left-4 top-4 transition-colors duration-300 peer-hover:text-gray-400 peer-focus:text-gray-400" />
             </div>
           </div>
         </div>
