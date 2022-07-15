@@ -32,7 +32,7 @@ const Navbar = () => {
         <div className="w-full relative sm:col-span-2 lg:col-span-1 lg:max-w-2xl">
           <input
             placeholder="جستجو بیش از 8 هزار کالا"
-            className="font-iran-yekan font-normal outline-none border-2 text-sm pr-2 border-gray-200 rounded-lg w-full h-14 transition-colors duration-300 hover:border-gray-300 focus:border-gray-300"
+            className="font-iran-yekan font-normal bg-transparent outline-none border-2 text-sm pr-2 border-gray-200 rounded-lg w-full h-14 transition-colors duration-300 hover:border-gray-300 focus:border-gray-300"
           />
           <div className="w-max h-max absolute top-3 left-3 bg-gray-200 px-2 py-2 rounded-lg transition-colors duration-300 hover:bg-gray-300">
             <FaSearch className="text-lg text-white cursor-pointer" />
