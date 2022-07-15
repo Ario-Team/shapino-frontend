@@ -13,7 +13,7 @@ import samandehiSVG from "../public/svgs/samandehi.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-white rounded-t-2xl h-max">
+    <footer className="bg-white rounded-t-2xl h-max lg:rounded-t-xl">
       <div className="grid grid-cols-2 place-items-center gap-y-10 py-6 pt-14 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
         <IconBox src={deliverySVG} text="تحویل اکسپرس" />
         <IconBox src={supporterSVG} text="پشتیبانی 24 ساعته" />
