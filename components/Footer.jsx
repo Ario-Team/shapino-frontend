@@ -69,7 +69,7 @@ const Footer = () => {
             <span className="font-iran-yekan font-bold text-xl">
               عضویت در خبرنامه
             </span>
-            <div className="w-full relative">
+            <div className="w-full relative mt-6">
               <input
                 className="peer w-full bg-gray-100 py-4 rounded-xl font-iran-yekan font-normal text-base pr-6"
                 placeholder="ایمیل خود را وارد کنید"
