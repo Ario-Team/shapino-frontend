@@ -11,6 +11,9 @@ module.exports = {
         kalameh: ["KalamehWeb", "sans-serif"],
         "iran-yekan": ["iranyekan", "sans-serif"],
       },
+      screens: {
+        "2xl": "1536px",
+      },
     },
   },
   plugins: [],

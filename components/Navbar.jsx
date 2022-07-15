@@ -5,9 +5,9 @@ import classes from "../styles/components/Navbar/index.module.scss";
 
 const Navbar = () => {
   return (
-    <div className="mt-5 px-2">
+    <div className="mt-5 px-2 min-w-full lg:px-0">
       <nav
-        className={`${classes.navbar} grid grid-cols-1 place-items-center w-full gap-6 sm:grid-cols-2 lg:grid-cols-3`}
+        className={`${classes.navbar} grid grid-cols-1 auto-rows-max auto-cols-max justify-items-center items-center w-full gap-6 sm:grid-cols-2 lg:grid-cols-3`}
       >
         <div className="flex flex-row items-center justify-center gap-2">
           <div className="w-8 h-max">
