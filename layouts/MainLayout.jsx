@@ -1,12 +1,16 @@
+import Footer from "../components/Footer";
 import Menu from "../components/Menu";
 import Navbar from "../components/Navbar";
 
-const MainLayout = () => {
+const MainLayout = ({ children }) => {
   return (
     <div className="xl:mx-20 2xl:mx-52">
-      <Navbar />
-      <hr className="my-5 w-full" />
-      <Menu />
+      <header>
+        <Navbar />
+        <hr className="my-5 w-full" />
+      </header>
+      <main>{children}</main>
+      <Footer />
     </div>
   );
 };
