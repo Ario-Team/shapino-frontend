@@ -24,7 +24,7 @@ const Navbar = () => {
           </span>
         </div>
         <div className="flex flex-row items-center gap-3 h-max">
-          <span className="font-iran-yekan font-bold text-lg">
+          <span className="font-iran-yekan font-bold text-base text-gray-600">
             09906198476 - 021-6420
           </span>
           <FaPhone className="text-gray-600 text-xl" />
@@ -35,7 +35,7 @@ const Navbar = () => {
             className="font-iran-yekan font-normal outline-none border-2 text-sm pr-2 border-gray-200 rounded-lg w-full h-14 transition-colors duration-300 hover:border-gray-300 focus:border-gray-300"
           />
           <div className="w-max h-max absolute top-3 left-3 bg-gray-200 px-2 py-2 rounded-lg transition-colors duration-300 hover:bg-gray-300">
-            <FaSearch className="text-lg text-white" />
+            <FaSearch className="text-lg text-white cursor-pointer" />
           </div>
         </div>
       </nav>
