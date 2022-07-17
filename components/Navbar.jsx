@@ -28,13 +28,13 @@ const Navbar = () => {
         <div className="flex flex-row items-center gap-3 h-max lg:justify-self-end lg:ml-5">
           <div className="flex gap-2">
             <Link href="tel:0216420" passHref>
-              <span className="font-iran-yekan font-bold text-base text-gray-700 cursor-pointer transition-color duration-300 hover:text-gray-900">
+              <span className="font-iran-yekan font-extrabold text-base text-gray-700 cursor-pointer transition-color duration-300 hover:text-gray-900">
                 021-6420
               </span>
             </Link>
             -
             <Link href="tel:+9809906198476" passHref>
-              <span className="font-iran-yekan font-bold text-base text-gray-700 cursor-pointer transition-color duration-300 hover:text-gray-900">
+              <span className="font-iran-yekan font-extrabold text-base text-gray-700 cursor-pointer transition-color duration-300 hover:text-gray-900">
                 09906198476
               </span>
             </Link>
