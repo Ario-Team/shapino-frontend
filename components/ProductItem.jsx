@@ -11,7 +11,7 @@ const ProductItem = ({
   originalPrice,
 }) => {
   return (
-    <div className="relative w-max bg-white px-9 flex flex-col items-center ">
+    <div className="relative w-max mx-auto bg-white px-9 flex flex-col items-center ">
       <div className="absolute left-6 top-5 flex flex-row gap-2 items-center">
         <FaStar className="text-yellow-400" />
         {rate}

@@ -43,11 +43,14 @@ export default function Home() {
             </SwiperSlide>
           </Swiper>
           <IconCategory />
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col gap-4 sm:flex-row">
             <CountdownCustom />
             <Swiper
               direction="horizontal"
               slidesPerView={1}
+              style={{
+                width: "100%",
+              }}
               centeredSlides
               breakpoints={{
                 760: {

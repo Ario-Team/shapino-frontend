@@ -5,12 +5,12 @@ import { RiArrowLeftSLine } from "react-icons/ri";
 
 const CountdownCustom = () => {
   return (
-    <div className="flex flex-col h-[22rem] justify-between relative bg-[#F2F0F1] w-max px-7 py-10">
+    <div className="flex flex-col w-11/12 mx-auto h-[22rem] justify-between relative bg-[#F2F0F1] px-7 py-10 sm:w-max">
       <div className="relative flex self-center">
         <div className="flex items-center gap-2">
-          <div className="w-[4.3rem] h-4 bg-orange-500"></div>
+          <div className="w-[5.5rem] h-5 bg-orange-500"></div>
           <div>
-            <Image src={counterClockSVG} width={24} height={24} />
+            <Image src={counterClockSVG} width={36} height={36} />
           </div>
         </div>
         <div className="absolute -right-5">
@@ -18,7 +18,7 @@ const CountdownCustom = () => {
             date={Date.now() + 10000000}
             renderer={({ hours, minutes, seconds }) => {
               return (
-                <div className="font-kalameh font-bold text-2xl text-black">
+                <div className="font-kalameh font-bold text-3xl text-black">
                   {hours}:{minutes}:{seconds}
                 </div>
               );
@@ -26,7 +26,7 @@ const CountdownCustom = () => {
           />
         </div>
       </div>
-      <span className="lg:absolute w-max top-28 -right-3.5 font-kalameh font-bold text-3xl text-[#FF6230] my-10">
+      <span className="self-center lg:absolute w-max top-28 -right-3.5 font-kalameh font-bold text-3xl text-[#FF6230] my-10">
         تخفیفات ویژه
       </span>
       <div className="w-max flex flex-row opacity-90 self-center transition-opacity duration-300 cursor-pointer shadow-sm hover:opacity-100">
