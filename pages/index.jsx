@@ -30,9 +30,6 @@ export default function Home() {
             }}
             speed={1500}
             className={classes.slider}
-            style={{
-              overflowY: "visible !important",
-            }}
             modules={[Pagination]}
           >
             <SwiperSlide>

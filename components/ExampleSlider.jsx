@@ -5,7 +5,7 @@ import dotsSVG from "../public/svgs/dots.svg";
 
 const ExampleSlider = () => {
   return (
-    <div className="w-full relative h-72 flex flex-row items-end justify-center lg:h-[400px] overflow-auto">
+    <div className="w-full overflow-hidden relative h-72 flex flex-row items-end justify-center lg:h-[400px] overflow-auto">
       <div className="w-full h-full absolute grid grid-cols-2">
         <div className="bg-white hidden lg:flex flex-col items-center justify-center px-32">
           <div className="w-full flex flex-row justify-between">
