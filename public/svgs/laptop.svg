@@ -1,0 +1,16 @@
+<svg data-name="Group 12" xmlns="http://www.w3.org/2000/svg" width="50" height="37.514" viewBox="0 0 50 37.514">
+    <defs>
+        <clipPath id="a">
+            <path data-name="Rectangle 19" fill="#111" d="M0 0h50v37.514H0z" />
+        </clipPath>
+    </defs>
+    <g data-name="Group 11" clip-path="url(#a)">
+        <path data-name="Path 6" d="M27.774 4.621h-5.549a1.415 1.415 0 1 0 0 2.83h5.549a1.415 1.415 0 0 0 0-2.83" fill="#3f8cff" />
+        <path data-name="Path 7" d="M49.919 35.628 47.225 28V1.415A1.415 1.415 0 0 0 45.81 0H4.189a1.415 1.415 0 0 0-1.415 1.415v26.58L.08 35.628a1.415 1.415 0 0 0 1.334 1.886h47.17a1.414 1.414 0 0 0 1.334-1.886M5.6 2.83h38.79v23.992H5.6ZM3.415 34.684l1.776-5.032h39.618l1.776 5.032Z" fill="#111" />
+        <path data-name="Path 8" d="m17.297 30.72-.736 2.6H33.44l-.736-2.6Z" fill="#7c8da6" />
+        <path data-name="Rectangle 15" fill="#111" d="M7.427 30.549h2.775v2.775H7.427z" />
+        <path data-name="Rectangle 16" fill="#111" d="M11.069 30.549h2.775v2.775h-2.775z" />
+        <path data-name="Rectangle 17" fill="#3f8cff" d="M36.157 30.549h2.775v2.775h-2.775z" />
+        <path data-name="Rectangle 18" fill="#111" d="M39.799 30.549h2.775v2.775h-2.775z" />
+    </g>
+</svg>

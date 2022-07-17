@@ -28,7 +28,6 @@ const Menu = () => {
         <Swiper
           direction="horizontal"
           slidesPerView={2}
-          centeredSlides={true}
           className="w-full"
           modules={[Pagination]}
           breakpoints={{

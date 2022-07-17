@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import Head from "next/head";
 import Menu from "../components/Menu";
+import IconCategory from "../components/IconCategory";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
               <ExampleSlider />
             </SwiperSlide>
           </Swiper>
+          <IconCategory />
         </div>
       </MainLayout>
     </>
