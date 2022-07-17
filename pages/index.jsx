@@ -10,6 +10,7 @@ import Head from "next/head";
 import Menu from "../components/Menu";
 import IconCategory from "../components/IconCategory";
 import CountdownCustom from "../components/CountdownCustom";
+import ProductItem from "../components/ProductItem";
 
 export default function Home() {
   return (
@@ -45,7 +46,67 @@ export default function Home() {
             </SwiperSlide>
           </Swiper>
           <IconCategory />
-          <CountdownCustom />
+          <div className="flex flex-row gap-4">
+            <CountdownCustom />
+            <Swiper
+              direction="horizontal"
+              slidesPerView="auto"
+              breakpoints={{
+                760: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+                1400: {
+                  slidesPerView: 4,
+                },
+                1900: {
+                  slidesPerView: 5,
+                },
+                2100: {
+                  slidesPerView: 6,
+                },
+                2500: {
+                  slidesPerView: 7,
+                },
+              }}
+            >
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+              <SwiperSlide style={{ width: "max-content" }}>
+                <ProductItem />
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </MainLayout>
     </>
