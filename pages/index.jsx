@@ -50,22 +50,28 @@ export default function Home() {
             <CountdownCustom />
             <Swiper
               direction="horizontal"
-              slidesPerView="auto"
+              slidesPerView={1}
+              centeredSlides
               breakpoints={{
                 760: {
                   slidesPerView: 2,
+                  centeredSlides: false,
                 },
                 1024: {
                   slidesPerView: 3,
+                  centeredSlides: false,
                 },
                 1400: {
                   slidesPerView: 4,
+                  centeredSlides: false,
                 },
                 1900: {
                   slidesPerView: 5,
+                  centeredSlides: false,
                 },
                 2100: {
                   slidesPerView: 6,
+                  centeredSlides: false,
                 },
                 2500: {
                   slidesPerView: 7,
