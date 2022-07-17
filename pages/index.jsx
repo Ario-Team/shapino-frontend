@@ -7,6 +7,7 @@ import classes from "../styles/pages/index/index.module.scss";
 import "swiper/css";
 import "swiper/css/pagination";
 import Head from "next/head";
+import Menu from "../components/Menu";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       </Head>
       <MainLayout>
         <div className="mb-5">
+          <Menu />
           <Swiper
             slidesPerView={1}
             pagination={{

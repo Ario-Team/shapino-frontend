@@ -1,42 +1,61 @@
 import menuData from "../fakeData/menu";
 import { HiMenuAlt1, HiMenuAlt2, HiMenuAlt3, HiMenuAlt4 } from "react-icons/hi";
 import { useEffect, useState } from "react";
+import { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import classes from "../styles/components/Menu/index.module.scss";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const Menu = () => {
-  const [open, setOpen] = useState(false);
+  const [width, setWidth] = useState(0);
   useEffect(() => {
-    if (window.innerWidth >= 1024) {
-      setOpen(true);
-    }
+    setWidth(window.innerWidth);
     window.onresize = () => {
-      if (window.innerWidth >= 1024) {
-        setOpen(true);
-      } else {
-        setOpen(false);
-      }
+      setWidth(window.innerWidth);
     };
   }, []);
   return (
-    <div>
-      <div
-        className="peer flex flex-row gap-3 font-iran-yekan font-bold items-center bg-gray-300 w-max mx-auto text-white px-5 py-3 lg:hidden"
-        data-open={open}
-        onClick={() => setOpen((o) => !o)}
-      >
-        <HiMenuAlt1 className="text-xl" />
-        <span>دسته بندی</span>
-      </div>
-      <ul
-        className={` ${
-          open
-            ? "bg-white border-2 border-gray-200 w-max text-center px-10 py-5 mx-auto z-20"
-            : "hidden"
-        } grid-flow-col gap-x-8 auto-cols-max place-items-center place-content-center mt-2 lg:visible lg:border-none lg:w-full lg:grid`}
-      >
-        {menuData.map((item, key) => {
-          return <MenuItem key={key} name={item} />;
-        })}
-      </ul>
+    <div className="bg-transparent mb-3">
+      {width > 1024 ? (
+        <ul className="flex flex-row items-center justify-center gap-6">
+          {menuData.map((item, key) => {
+            return <MenuItem key={key} name={item} />;
+          })}
+        </ul>
+      ) : (
+        <Swiper
+          direction="horizontal"
+          slidesPerView={2}
+          centeredSlides={true}
+          className="w-full"
+          modules={[Pagination]}
+          breakpoints={{
+            450: {
+              slidesPerView: 3,
+            },
+            750: {
+              slidesPerView: 4,
+            },
+            800: {
+              slidesPerView: 5,
+            },
+          }}
+        >
+          {menuData.map((item, key) => {
+            return (
+              <SwiperSlide
+                key={key}
+                className="w-max flex flex-row gap-2 justify-center items-center"
+              >
+                {item == "دسته بندی" ? <HiMenuAlt1 /> : null}
+                <span>{item}</span>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      )}
     </div>
   );
 };
