@@ -37,7 +37,7 @@ const ExampleSlider = () => {
                 </span>
               </div>
               <div>
-                <span className="font-kalameh font-black text-4xl lg:text-3xl">
+                <span className="font-kalameh font-black text-3xl">
                   فروش ویژه برند آدیداس
                 </span>
               </div>
