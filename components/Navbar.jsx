@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav
         className={`${classes.navbar} grid grid-cols-1 auto-rows-max auto-cols-max justify-items-center items-center w-full gap-6 sm:grid-cols-2 lg:grid-cols-3`}
       >
-        <div className="flex flex-row items-center justify-center gap-2 justify-self-start">
+        <div className="flex flex-row items-center justify-center gap-2 lg:justify-self-start lg:mr-5">
           <div className="w-8 h-max">
             <Image
               src={logoSVG}
@@ -25,7 +25,7 @@ const Navbar = () => {
             شاپینو
           </span>
         </div>
-        <div className="flex flex-row items-center gap-3 h-max justify-self-end">
+        <div className="flex flex-row items-center gap-3 h-max lg:justify-self-end lg:ml-5">
           <div className="flex gap-2">
             <Link href="tel:0216420" passHref>
               <span className="font-iran-yekan font-bold text-base text-gray-700 cursor-pointer transition-color duration-300 hover:text-gray-900">
