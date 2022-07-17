@@ -6,34 +6,42 @@ import classes from "../styles/pages/index/index.module.scss";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <MainLayout>
-      <div className="mb-5">
-        <Swiper
-          slidesPerView={1}
-          pagination={{
-            enabled: true,
-            horizontalClass: `${classes.bullet_container}`,
-          }}
-          className={classes.slider}
-          style={{
-            overflowY: "visible !important",
-          }}
-          modules={[Pagination]}
-        >
-          <SwiperSlide>
-            <ExampleSlider />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ExampleSlider />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ExampleSlider />
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    </MainLayout>
+    <>
+      <Head>
+        <title>شاپیفای</title>
+      </Head>
+      <MainLayout>
+        <div className="mb-5">
+          <Swiper
+            slidesPerView={1}
+            pagination={{
+              enabled: true,
+              horizontalClass: `${classes.bullet_container}`,
+              clickable: true,
+            }}
+            speed={1500}
+            className={classes.slider}
+            style={{
+              overflowY: "visible !important",
+            }}
+            modules={[Pagination]}
+          >
+            <SwiperSlide>
+              <ExampleSlider />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ExampleSlider />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ExampleSlider />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </MainLayout>
+    </>
   );
 }

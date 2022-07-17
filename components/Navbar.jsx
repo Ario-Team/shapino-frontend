@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import logoSVG from "../public/svgs/logo.svg";
-import { FaPhone, FaSearch } from "react-icons/fa";
+import phoneSVG from "../public/svgs/phone.svg";
+import searchSVG from "../public/svgs/search.svg";
 import classes from "../styles/components/Navbar/index.module.scss";
 
 const Navbar = () => {
@@ -9,7 +11,7 @@ const Navbar = () => {
       <nav
         className={`${classes.navbar} grid grid-cols-1 auto-rows-max auto-cols-max justify-items-center items-center w-full gap-6 sm:grid-cols-2 lg:grid-cols-3`}
       >
-        <div className="flex flex-row items-center justify-center gap-2">
+        <div className="flex flex-row items-center justify-center gap-2 justify-self-start">
           <div className="w-8 h-max">
             <Image
               src={logoSVG}
@@ -23,19 +25,37 @@ const Navbar = () => {
             شاپینو
           </span>
         </div>
-        <div className="flex flex-row items-center gap-3 h-max">
-          <span className="font-iran-yekan font-bold text-base text-gray-600">
-            09906198476 - 021-6420
-          </span>
-          <FaPhone className="text-gray-600 text-xl" />
+        <div className="flex flex-row items-center gap-3 h-max justify-self-end">
+          <div className="flex gap-2">
+            <Link href="tel:0216420" passHref>
+              <span className="font-iran-yekan font-bold text-base text-gray-700 cursor-pointer transition-color duration-300 hover:text-gray-900">
+                021-6420
+              </span>
+            </Link>
+            -
+            <Link href="tel:+9809906198476" passHref>
+              <span className="font-iran-yekan font-bold text-base text-gray-700 cursor-pointer transition-color duration-300 hover:text-gray-900">
+                09906198476
+              </span>
+            </Link>
+          </div>
+          <div>
+            <Image
+              src={phoneSVG}
+              width={24}
+              height={24}
+              alt="phone svg"
+              loading="eager"
+            />
+          </div>
         </div>
         <div className="w-full relative sm:col-span-2 lg:col-span-1 lg:max-w-2xl">
           <input
             placeholder="جستجو بیش از 8 هزار کالا"
             className="font-iran-yekan font-normal bg-transparent outline-none border-2 text-sm pr-2 border-gray-200 rounded-lg w-full h-14 transition-colors duration-300 hover:border-gray-300 focus:border-gray-300"
           />
-          <div className="w-max h-max absolute top-3 left-3 bg-gray-200 px-2 py-2 rounded-lg transition-colors duration-300 hover:bg-gray-300">
-            <FaSearch className="text-lg text-white cursor-pointer" />
+          <div className=" flex justify-center items-center w-max h-max absolute top-3 left-3 bg-gray-400 bg-opacity-80 px-2 py-1.5 rounded-lg transition-colors duration-300 cursor-pointer hover:bg-gray-500">
+            <Image src={searchSVG} width={20} height={20} alt="search icon" />
           </div>
         </div>
       </nav>

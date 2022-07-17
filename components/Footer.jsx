@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaInstagram, FaTelegram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTelegram,
+  FaTelegramPlane,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import deliverySVG from "../public/svgs/delivery.svg";
 import guaranteeSVG from "../public/svgs/guarantee.svg";
@@ -55,12 +61,12 @@ const Footer = () => {
             "همکاری تجاری",
           ]}
         />
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           <span className="font-iran-yekan font-bold text-xl">
             شبکه های اجتماعی
           </span>
-          <div className="flex flex-row-reverse gap-8 mt-6 mr-32">
-            <FaTelegram className="text-2xl text-black opacity-60 transition-[opacity, color] duration-200 cursor-pointer hover:opacity-100 hover:text-blue-500 focus:opacity-100" />
+          <div className="flex flex-row-reverse gap-8 mt-6 justify-self-end">
+            <FaTelegramPlane className="text-2xl text-black opacity-60 transition-[opacity, color] duration-200 cursor-pointer hover:opacity-100 hover:text-blue-500 focus:opacity-100" />
             <FaWhatsapp className="text-2xl text-black opacity-60 transition-[opacity, color] duration-200 cursor-pointer hover:opacity-100 hover:text-blue-500 focus:opacity-100" />
             <FaInstagram className="text-2xl text-black opacity-60 transition-[opacity, color] duration-200 cursor-pointer hover:opacity-100 hover:text-blue-500 focus:opacity-100" />
             <FaTwitter className="text-2xl text-black opacity-60 transition-[opacity, color] duration-200 cursor-pointer hover:opacity-100 hover:text-blue-500 focus:opacity-100" />
@@ -90,11 +96,9 @@ const Footer = () => {
           به بزرگ‌ترین فروشگاه اینترنتی ایران تبدیل شود. به محض ورود به سایت
           دیجی‌کالا با دنیایی از کالا رو به رو می‌شوید! هر آنچه که نیاز دارید و
           .به ذهن شما خطور می‌کند در اینجا پیدا خواهید کرد
-          <Link href="#" passHref>
-            <span className="text-blue-400 mr-3 font-iran-yekan text-base cursor-pointer">
-              بیشتر...
-            </span>
-          </Link>
+          <span className="text-blue-400 mr-3 font-iran-yekan text-base cursor-pointer">
+            بیشتر...
+          </span>
         </p>
       </div>
       <div className="w-full flex flex-row items-center justify-center gap-10 py-10">
