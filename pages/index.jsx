@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 import Head from "next/head";
 import Menu from "../components/Menu";
 import IconCategory from "../components/IconCategory";
+import CountdownCustom from "../components/CountdownCustom";
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
             </SwiperSlide>
           </Swiper>
           <IconCategory />
+          <CountdownCustom />
         </div>
       </MainLayout>
     </>
