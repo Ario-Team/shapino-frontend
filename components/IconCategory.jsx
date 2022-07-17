@@ -14,7 +14,7 @@ import "swiper/css";
 
 const IconCategory = () => {
   return (
-    <div className="w-full mt-10">
+    <div className="w-full mt-10 lg:px-10">
       <Swiper
         direction="horizontal"
         slidesPerView={2}
