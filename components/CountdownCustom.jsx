@@ -5,7 +5,7 @@ import { RiArrowLeftSLine } from "react-icons/ri";
 
 const CountdownCustom = () => {
   return (
-    <div className="flex flex-col h-72 justify-between relative bg-[#F2F0F1] w-max px-7 py-10">
+    <div className="mr-4 flex flex-col h-72 justify-between relative bg-[#F2F0F1] w-max px-7 py-10 lg:mr-0">
       <div className="relative flex self-center">
         <div className="flex items-center gap-2">
           <div className="w-[4.3rem] h-4 bg-orange-500"></div>
@@ -26,7 +26,7 @@ const CountdownCustom = () => {
           />
         </div>
       </div>
-      <span className="absolute w-max top-20 -right-3.5 font-kalameh font-bold text-3xl text-[#FF6230] my-10">
+      <span className="lg:absolute w-max top-20 -right-3.5 font-kalameh font-bold text-3xl text-[#FF6230] my-10">
         تخفیفات ویژه
       </span>
       <div className="flex flex-row opacity-90 self-center transition-opacity duration-300 cursor-pointer shadow-sm hover:opacity-100">
