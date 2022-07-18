@@ -6,11 +6,12 @@ import "swiper/css";
 
 const OfferedProducts = () => {
   return (
-    <div className="flex flex-col gap-4 sm:flex-row">
+    <div className="flex flex-col gap-5 sm:flex-row">
       <CountdownCustom />
       <Swiper
         direction="horizontal"
         slidesPerView={1}
+        className="mt-7 sm:mt-0"
         style={{
           width: "100%",
         }}
