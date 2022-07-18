@@ -89,7 +89,7 @@ const Footer = () => {
         <span className="font-iran-yekan text-lg text-center font-bold">
           فروشگاه اینترنتی آنلاین مارکت ، بررسی، انتخاب و خرید آنلاین
         </span>
-        <p className="text-center px-2 mt-5 font-iran-yekan font-medium text-base sm:px-20 lg:max-w-7xl">
+        <p className="text-center px-2 mt-5 font-iran-yekan font-medium text-base sm:px-20 lg:max-w-8xl">
           آنلاین مارکت به عنوان یکی از قدیمی‌ترین فروشگاه های اینترنتی با بیش از
           یک دهه تجربه، با پایبندی به سه اصل، پرداخت در محل، 7 روز ضمانت بازگشت
           کالا و تضمین اصل‌بودن کالا موفق شده تا همگام با فروشگاه‌هایمعتبر جهان،
