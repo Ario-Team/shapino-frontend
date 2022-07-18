@@ -11,6 +11,7 @@ import MostSellSlider from "../components/MostSellSlider";
 import XiaomiFestival from "../components/XiaomiFestival";
 import ProductDailyRecommendSlider from "../components/ProductDailyRecommendSlider";
 import BlogPostsSlider from "../components/BlogPostsSlider";
+import MostViewed from "../components/MostViewed";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
           <XiaomiFestival />
           <ProductDailyRecommendSlider />
           <BlogPostsSlider />
+          <MostViewed />
         </div>
       </MainLayout>
     </>
