@@ -5,8 +5,8 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
 import deliverySVG from "../public/svgs/delivery.svg";
+import mailSVG from "../public/svgs/mail.svg";
 import guaranteeSVG from "../public/svgs/guarantee.svg";
 import shieldSVG from "../public/svgs/shield.svg";
 import supporterSVG from "../public/svgs/supporter.svg";
@@ -78,7 +78,9 @@ const Footer = () => {
                 className="peer w-full outline-none bg-gray-100 py-4 rounded-xl font-iran-yekan font-normal text-base pr-6 border-transparent border-2 transition-colors duration-300 hover:border-gray-400 focus:border-gray-400"
                 placeholder="ایمیل خود را وارد کنید"
               />
-              <FiMail className="text-gray-300 absolute text-2xl left-4 top-4 transition-colors duration-300 peer-hover:text-gray-400 peer-focus:text-gray-400" />
+              <div className="absolute top-[1.2rem] left-7 cursor-pointer">
+                <Image src={mailSVG} width={24} height={24} alt="Mail svg" />
+              </div>
             </div>
           </div>
         </div>
