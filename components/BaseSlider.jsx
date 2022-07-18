@@ -2,7 +2,12 @@ import { Swiper } from "swiper/react";
 
 import "swiper/css";
 
-const BaseSlider = ({ title, children }) => {
+const BaseSlider = ({
+  title,
+  children,
+  customBreakpoints,
+  customStarterView,
+}) => {
   return (
     <div className="w-11/12 mt-12 mx-auto flex flex-col gap-5 lg:mx-0 lg:w-full">
       <div className="w-full flex flex-row justify-between items-center">
@@ -15,28 +20,32 @@ const BaseSlider = ({ title, children }) => {
         direction="horizontal"
         className="w-screen lg:w-full"
         centeredSlidesBounds
-        slidesPerView={1}
+        slidesPerView={customStarterView ? customStarterView : 1}
         style={{
           paddingBlock: 24,
           paddingLeft: 10,
         }}
-        breakpoints={{
-          550: {
-            slidesPerView: 2,
-          },
-          750: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
-          1712: {
-            slidesPerView: 5,
-          },
-          2000: {
-            slidesPerView: 6,
-          },
-        }}
+        breakpoints={
+          customBreakpoints
+            ? customBreakpoints
+            : {
+                550: {
+                  slidesPerView: 2,
+                },
+                750: {
+                  slidesPerView: 3,
+                },
+                1024: {
+                  slidesPerView: 4,
+                },
+                1712: {
+                  slidesPerView: 5,
+                },
+                2000: {
+                  slidesPerView: 6,
+                },
+              }
+        }
         breakpointsBase="container"
       >
         {children}
