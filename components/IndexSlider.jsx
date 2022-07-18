@@ -16,7 +16,7 @@ const IndexSlider = () => {
         clickable: true,
       }}
       speed={1500}
-      className={classes.slider}
+      className={`${classes.slider} rounded-lg`}
       modules={[Pagination]}
     >
       <SwiperSlide>
