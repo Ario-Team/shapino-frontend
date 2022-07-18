@@ -14,6 +14,8 @@ const OfferedProducts = () => {
         className="mt-7 sm:mt-0"
         style={{
           width: "100%",
+          paddingBlock: 20,
+          marginTop: "-20px",
         }}
         breakpointsBase="container"
         breakpoints={{

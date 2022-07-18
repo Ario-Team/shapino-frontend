@@ -11,12 +11,12 @@ const ProductItem = ({
   originalPrice,
 }) => {
   return (
-    <div className="relative rounded-xl w-max mx-auto bg-white px-9 flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-[#FF6230] hover:shadow-md ">
+    <div className="relative rounded-xl w-max mx-auto bg-white px-9 flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-[#FF6230]/30 hover:shadow-md ">
       <div className="absolute left-6 top-5 flex flex-row gap-2 items-center">
         <FaStar className="text-yellow-400" />
         {rate}
       </div>
-      <Image src={shoesSVG} width={150} height={150} />
+      <Image src={shoesSVG} width={150} height={150} alt="Product image" />
       <span className="w-44 text-center font-iran-yekan font-medium text-lg">
         {title}
       </span>
