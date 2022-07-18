@@ -21,8 +21,8 @@ This set of fonts are used in this project under the license: (.....)
   font-family: KalamehWeb;
   font-style: normal;
   font-weight: 100;
-  src: url("/fonts/woff2/KalamehWeb-Thin.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/KalamehWeb-Thin.woff")
+  src: url("/fonts/woff2/KalamehWeb_thin.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/KalamehWeb_thin.woff")
       format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
@@ -70,23 +70,23 @@ This set of fonts are used in this project under the license: (.....)
   font-family: KalamehWeb;
   font-style: normal;
   font-weight: 900;
-  src: url("/fonts/woff2/KalamehWeb-Black.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/KalamehWeb-Black.woff")
+  src: url("/fonts/woff2/KalamehWeb_Black.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/KalamehWeb_Black.woff")
       format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
   font-family: KalamehWeb;
   font-style: normal;
   font-weight: bold;
-  src: url("/fonts/woff2/KalamehWeb-Bold.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/KalamehWeb-Bold.woff")
+  src: url("/fonts/woff2/KalamehWeb_Bold.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/KalamehWeb_Bold.woff")
       format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
 @font-face {
   font-family: KalamehWeb;
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/woff2/KalamehWeb-Regular.woff2") format("woff2"),
-    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/KalamehWeb-Regular.woff")
+  src: url("/fonts/woff2/KalamehWeb_Regular.woff2") format("woff2"),
+    /* FF39+,Chrome36+, Opera24+*/ url("/fonts/woff/KalamehWeb_Regular.woff")
       format("woff"); /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
 }
