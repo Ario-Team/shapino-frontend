@@ -17,7 +17,7 @@ const Menu = () => {
     };
   }, []);
   return (
-    <div className="bg-transparent mb-3">
+    <div className="bg-transparent mb-10 mt-6">
       {width > 1024 ? (
         <ul className="flex flex-row items-center justify-center gap-6">
           {menuData.map((item, key) => {
