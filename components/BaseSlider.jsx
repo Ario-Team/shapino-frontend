@@ -13,13 +13,17 @@ const BaseSlider = ({ title, children }) => {
       </div>
       <Swiper
         direction="horizontal"
-        className="w-screen lg:w-full "
-        slidesPerView={2}
+        className="w-screen lg:w-full"
+        centeredSlidesBounds
+        slidesPerView={1}
         style={{
           paddingBlock: 24,
-          paddingInline: 2,
+          paddingLeft: 10,
         }}
         breakpoints={{
+          500: {
+            slidesPerView: 2,
+          },
           700: {
             slidesPerView: 3,
           },

@@ -7,6 +7,7 @@ import OfferedProducts from "../components/OfferedProducts";
 import SonyBox from "../components/SonyBox";
 import JeanBrandBox from "../components/JeanBrandBox";
 import PopularBrands from "../components/PopularBrands";
+import MostSellSlider from "../components/MostSellSlider";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
             <SonyBox />
             <JeanBrandBox />
           </div>
+          <MostSellSlider />
           <PopularBrands />
         </div>
       </MainLayout>
