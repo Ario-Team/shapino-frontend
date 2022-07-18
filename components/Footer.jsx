@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import {
   FaInstagram,
-  FaTelegram,
   FaTelegramPlane,
   FaTwitter,
   FaWhatsapp,
@@ -21,15 +19,15 @@ const Footer = () => {
   return (
     <footer className="bg-white rounded-t-2xl h-max lg:rounded-t-xl">
       <div className="grid grid-cols-2 place-items-center gap-y-10 py-6 pt-14 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-        <IconBox src={deliverySVG} text="تحویل اکسپرس" />
-        <IconBox src={supporterSVG} text="پشتیبانی 24 ساعته" />
-        <IconBox src={truckSVG} text="تحویل سریع و آسان" />
-        <IconBox src={guaranteeSVG} text="ضمانت اصالت کالا" />
         <IconBox
           className="col-span-2 sm:col-span-1 lg:col-span-4 xl:col-span-1"
           src={shieldSVG}
           text="تضمین بهترین قیمت"
         />
+        <IconBox src={guaranteeSVG} text="ضمانت اصالت کالا" />
+        <IconBox src={truckSVG} text="تحویل سریع و آسان" />
+        <IconBox src={supporterSVG} text="پشتیبانی 24 ساعته" />
+        <IconBox src={deliverySVG} text="تحویل اکسپرس" />
       </div>
       <div className="px-5 pb-5 grid grid-cols-1 place-items-center mt-14 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:place-items-start lg:mx-12">
         <List
