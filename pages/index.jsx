@@ -8,6 +8,7 @@ import SonyBox from "../components/SonyBox";
 import JeanBrandBox from "../components/JeanBrandBox";
 import PopularBrands from "../components/PopularBrands";
 import MostSellSlider from "../components/MostSellSlider";
+import XiaomiFestival from "../components/XiaomiFestival";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           </div>
           <MostSellSlider />
           <PopularBrands />
+          <XiaomiFestival />
         </div>
       </MainLayout>
     </>
