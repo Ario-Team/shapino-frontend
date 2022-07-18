@@ -21,19 +21,19 @@ const BaseSlider = ({ title, children }) => {
           paddingLeft: 10,
         }}
         breakpoints={{
-          500: {
+          550: {
             slidesPerView: 2,
           },
-          700: {
+          750: {
             slidesPerView: 3,
           },
           1024: {
             slidesPerView: 4,
           },
-          1370: {
+          1712: {
             slidesPerView: 5,
           },
-          1920: {
+          2000: {
             slidesPerView: 6,
           },
         }}
