@@ -4,7 +4,7 @@ import blogImage from "../public/images/blog.png";
 
 const BlogItem = ({ src, title, date, view }) => {
   return (
-    <section className="bg-white flex flex-col items-center w-max px-5 py-5 drop-shadow-lg transition-all duration-300 rounded-lg hover:scale-105 hover:shadow-[#FF6230]/30 hover:shadow-md">
+    <section className="bg-white cursor-pointer flex flex-col items-center w-max px-5 py-5 drop-shadow-lg transition-all duration-300 rounded-lg hover:scale-105 hover:shadow-[#FF6230]/30 hover:shadow-md">
       <div className="rounded-sm h-max w-max overflow-hidden">
         <Image src={src} width={280} height={160} alt={title} />
       </div>
