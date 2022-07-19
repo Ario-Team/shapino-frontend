@@ -28,7 +28,7 @@ const MostViewed = () => {
 
 const MostViewedBox = ({ src, buy, view }) => {
   return (
-    <div className="group w-max bg-white px-10 py-6 rounded-md flex flex-col items-center cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-[#FF6230]/30 hover:shadow-md">
+    <div className="group w-11/12 bg-white px-10 py-6 rounded-md flex flex-col items-center cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-[#FF6230]/30 hover:shadow-md sm:w-11/12 md:w-[20rem] xxl:w-11/12">
       <div>
         <Image src={src} width={150} height={150} alt="Product image" />
       </div>
