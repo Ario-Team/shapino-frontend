@@ -6,9 +6,15 @@ import blogImage from "../public/images/blog.png";
 const BlogItem = ({ src, title, date, view }) => {
   return (
     <Link href="/posts" passHref>
-      <section className="bg-white cursor-pointer flex flex-col items-center w-max px-5 py-5 drop-shadow-lg transition-all duration-300 rounded-lg hover:scale-105 hover:shadow-[#FF6230]/30 hover:shadow-md">
-        <div className="rounded-sm h-max w-max overflow-hidden">
-          <Image src={src} width={280} height={160} alt={title} />
+      <section className="bg-white cursor-pointer flex flex-col items-center w-full px-5 py-5 drop-shadow-lg transition-all duration-300 z-10 hover:scale-105 hover:shadow-[#FF6230]/30 hover:shadow-md hover:z-20">
+        <div className="rounded-sm h-max w-full overflow-hidden">
+          <Image
+            src={src}
+            width={280}
+            height={160}
+            alt={title}
+            layout="responsive"
+          />
         </div>
         <h1 className="font-iran-yekan font-bold text-center mt-5 text-lg max-w-[80%]">
           {title}

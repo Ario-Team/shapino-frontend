@@ -8,17 +8,28 @@ const BlogPostsSlider = () => {
       title="وبلاگ مارکت"
       customStarterView={1}
       customBreakpoints={{
-        670: {
+        0: {
           slidesPerView: 2,
+          spaceBetween: 8,
+          style: {
+            overflow: "visible",
+          },
         },
-        1024: {
+        670: {
           slidesPerView: 3,
+          spaceBetween: 4,
         },
-        1800: {
+        914: {
+          spaceBetween: 5,
           slidesPerView: 4,
         },
-        2066: {
+        1200: {
+          spaceBetween: 6,
           slidesPerView: 5,
+        },
+        1800: {
+          spaceBetween: 7,
+          slidesPerView: 6,
         },
       }}
     >
