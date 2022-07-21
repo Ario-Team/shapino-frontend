@@ -29,20 +29,32 @@ const BaseSlider = ({
           customBreakpoints
             ? customBreakpoints
             : {
-                550: {
+                1: {
                   slidesPerView: 2,
+                  spaceBetween: 80,
+                  style: {
+                    overflowX: "visible",
+                  },
                 },
-                750: {
+                580: {
                   slidesPerView: 3,
+                  spaceBetween: 210,
+                },
+                800: {
+                  slidesPerView: 4,
+                  spaceBetween: 210,
                 },
                 1024: {
-                  slidesPerView: 4,
-                },
-                1712: {
                   slidesPerView: 5,
+                  spaceBetween: 230,
                 },
-                2000: {
+                1500: {
                   slidesPerView: 6,
+                  spaceBetween: 250,
+                },
+                2064: {
+                  slidesPerView: 9,
+                  spaceBetween: 250,
                 },
               }
         }
