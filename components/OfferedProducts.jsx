@@ -17,31 +17,37 @@ const OfferedProducts = () => {
         }}
         breakpointsBase="container"
         breakpoints={{
-          730: {
+          500: {
             slidesPerView: 2,
+            spaceBetween: 2,
+            style: {
+              overflowY: "visible",
+            },
             centeredSlides: false,
           },
-          1024: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 70,
+          },
+          700: {
             slidesPerView: 3,
-            centeredSlides: false,
+            spaceBetween: 240,
           },
-          1400: {
+          1019: {
             slidesPerView: 4,
-            centeredSlides: false,
+            spaceBetween: 220,
           },
-          1900: {
+          1243: {
             slidesPerView: 5,
-            centeredSlides: false,
+            spaceBetween: 230,
           },
-          2100: {
+          1907: {
             slidesPerView: 6,
-            centeredSlides: false,
+            spaceBetween: 240,
           },
-          2500: {
-            slidesPerView: 7,
-          },
-          3000: {
-            slidesPerView: 9,
+          2064: {
+            slidesPerView: 8,
+            spaceBetween: 250,
           },
         }}
       >
