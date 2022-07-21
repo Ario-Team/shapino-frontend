@@ -7,11 +7,16 @@ const PopularBrands = () => {
     <BaseSlider
       title={"محبوبترین برند ها"}
       customBreakpoints={{
-        371: {
+        1: {
           slidesPerView: 2,
+          spaceBetween: 1,
+          style: {
+            overflowY: "visible",
+          },
         },
-        600: {
+        450: {
           slidesPerView: 3,
+          spaceBetween: 1,
         },
         800: {
           slidesPerView: 4,

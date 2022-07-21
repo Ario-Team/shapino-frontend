@@ -4,7 +4,7 @@ import tscoBrand from "../public/images/brands/tsco.png";
 
 const PopularBrandsBox = ({ src, count, rate }) => {
   return (
-    <div className="group cursor-pointer bg-white w-max px-7 py-5 rounded-lg transition-all duration-300 drop-shadow-md scale-90 hover:drop-shadow-xl hover:scale-105 hover:shadow-[#FF6230]/40 hover:shadow-md">
+    <div className="group cursor-pointer bg-white w-full flex flex-col items-center px-7 py-5 transition-all duration-300 drop-shadow-md scale-90 hover:drop-shadow-xl hover:scale-105 hover:shadow-[#FF6230]/40 hover:shadow-md">
       <div>
         <Image
           loading="eager"
