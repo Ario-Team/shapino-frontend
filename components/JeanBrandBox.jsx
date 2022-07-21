@@ -7,8 +7,10 @@ const JeanBrandBox = () => {
       className="w-11/12 flex flex-col h-48 items-center bg-left justify-center gap-5 pl-14 lg:bg-center lg:w-6/12 lg:items-end lg:h-[200px]"
       backgroundImage={'url("/images/boxBackground.png")'}
     >
-      <span className="font-kalameh font-bold text-2xl">شلوار جین وست</span>
-      <span className="font-kalameh font-bold text-3xl text-[#FF6230]">
+      <span className="font-kalameh font-bold text-3xl lg:text-4xl">
+        شلوار جین وست
+      </span>
+      <span className="font-kalameh font-bold text-4xl text-[#FF6230] lg:text-5xl">
         jean
       </span>
       <div className="flex flex-row w-max cursor-pointer items-center transition-all duration-300 hover:shadow-md">

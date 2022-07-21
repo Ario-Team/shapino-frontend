@@ -10,7 +10,7 @@ const SonyBox = () => {
       className="w-11/12 h-52 flex flex-col items-center justify-center text-center relative mb-5 lg:mb-0 md:overflow-hidden lg:w-5/12 lg:items-start lg:pr-10 2xl:overflow-visible 2xl:w-6/12"
     >
       <div className="flex flex-col z-10">
-        <div className="flex flex-row gap-3 font-kalameh font-bold text-2xl md:text-3xl">
+        <div className="flex flex-row gap-3 font-kalameh font-extrabold text-2xl md:text-4xl">
           <span className="ml-3">محصولات سونی</span>
           <span className="text-white uppercase">Sony</span>
         </div>
