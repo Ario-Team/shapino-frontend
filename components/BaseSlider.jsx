@@ -31,7 +31,7 @@ const BaseSlider = ({
             : {
                 1: {
                   slidesPerView: 2,
-                  spaceBetween: 80,
+                  spaceBetween: 180,
                   style: {
                     overflowX: "visible",
                   },
