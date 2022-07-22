@@ -11,16 +11,18 @@ const Navbar = () => {
       <nav
         className={`${classes.navbar} grid grid-cols-1 auto-rows-max auto-cols-max justify-items-center items-center w-full gap-6 sm:grid-cols-2 lg:grid-cols-3`}
       >
-        <div className="flex flex-row items-center justify-center gap-2 lg:justify-self-start lg:mr-5">
-          <div className="w-8 h-max">
-            <Image
-              src={logoSVG}
-              layout="responsive"
-              width={50}
-              height={50}
-              alt="Logo"
-            />
-          </div>
+        <div className="cursor-pointer flex flex-row items-center justify-center gap-2 lg:justify-self-start lg:mr-5">
+          <Link href="/" passHref prefetch>
+            <div className="w-8 h-max">
+              <Image
+                src={logoSVG}
+                layout="responsive"
+                width={50}
+                height={50}
+                alt="Logo"
+              />
+            </div>
+          </Link>
           <span className="text-blue-500 font-bold font-kalameh text-2xl">
             شاپینو
           </span>
