@@ -4,7 +4,7 @@ import postboxImage from "../../public/images/postBox.png";
 
 const PostBox = ({ title, description, date, view, src }) => {
   return (
-    <div className="w-11/12 bg-white flex flex-col rounded-lg items-center mx-auto lg:flex-row lg:max-w-max lg:max-h-72 lg:items-center lg:mx-0 lg:py-6 lg:px-6">
+    <div className="w-11/12 bg-white flex flex-col rounded-lg items-center mx-auto lg:flex-row lg:max-w-full lg:max-h-72 lg:items-center lg:mx-0 lg:py-6 lg:px-6">
       <div className="w-full overflow-hidden rounded-2xl lg:min-w-[280px] lg:max-w-[280px]">
         <Image
           src={src}
@@ -14,7 +14,7 @@ const PostBox = ({ title, description, date, view, src }) => {
           layout="responsive"
         />
       </div>
-      <div className=" flex flex-col gap-4 items-center font-iran-yekan text-center py-5 px-2 lg:items-start lg:text-right lg:mr-7">
+      <div className="w-full  flex flex-col gap-4 items-center font-iran-yekan text-center py-5 px-2 lg:items-start lg:text-right lg:mr-7 xxl:items-center">
         <span className="font-bold text-lg">{title}</span>
         <p className="font-normal text-base text-[#676D7C] lg:max-w-2xl">
           {description}
