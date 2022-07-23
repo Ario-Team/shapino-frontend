@@ -8,11 +8,14 @@ import xiaomiLogoImage from "../public/images/xiaomiLogo.png";
 import bellSVG from "../public/svgs/bell.svg";
 import calendarSVG from "../public/svgs/calendar.svg";
 import tikSVG from "../public/svgs/tik.svg";
+import tikBlueSVG from "../public/svgs/tikBlue.svg";
+import tikEmptySVG from "../public/svgs/tikEmpty.svg";
 import productTruckSVG from "../public/svgs/productTruck.svg";
 import flagSVG from "../public/svgs/flag.svg";
 import { AiFillBell, AiFillHeart, AiOutlineFacebook } from "react-icons/ai";
 import { FaStar, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
+import ProductItem from "../components/ProductItem";
 
 const product = () => {
   return (
@@ -20,7 +23,7 @@ const product = () => {
       <Head>
         <title>شاپینو | موبایل شیائومی ردمی نوت 11 پرو پلاس WX400</title>
       </Head>
-      <div className="flex flex-col my-5 items-center">
+      <div className="flex flex-col gap-10 my-5 items-center">
         <div className="w-full flex flex-col items-center  gap-4 lg:items-start lg:flex-row">
           <div className="flex flex-col items-center w-full max-w-md">
             <div className="flex flex-col rounded-lg bg-white w-11/12 items-center py-16 gap-3 sm:w-full">
@@ -322,8 +325,92 @@ const product = () => {
             </div>
           </div>
         </div>
-        <div></div>
-        <div></div>
+        <div className="w-11/12 sm:w-full mt-7">
+          <div className="w-full flex flex-row justify-between items-center">
+            <span className="font-kalameh font-bold text-xl">
+              محصولات پیشنهادی
+            </span>
+            <span className="font-iran-yekan font-medium text-base cursor-pointer text-[#3F8CFF] transition-all duration-300 hover:drop-shadow-md">
+              مشاهده همه
+            </span>
+          </div>
+          <div className="relative flex flex-col xl:flex-row items-center mt-6 sm:gap-1">
+            <div className="flex flex-col h-max items-center gap-5 w-full sm:flex-row sm:gap-1 sm:w-max sm:mb-5 xl:mb-0">
+              <div className="w-max">
+                <ProductItem />
+              </div>
+              <div className="w-max">
+                <ProductItem />
+              </div>
+            </div>
+            <div className="bg-white h-[362px] w-full w-min-max px-11 py-7 flex flex-col">
+              <div className="font-iran-yekan w-full flex flex-col items-start gap-4 mt-8">
+                <div className=" flex flex-row gap-7">
+                  <div className="flex flex-row gap-3">
+                    <div>
+                      <Image
+                        src={tikBlueSVG}
+                        width={24}
+                        height={24}
+                        alt="blue tik"
+                      />
+                    </div>
+                    <span className="text-[#676D7C] text-base">
+                      این محصول :
+                    </span>
+                  </div>
+                  <span className="font-medium text-lg">
+                    موبایل شیائومی ردمی نوت 11 پرو پلاس WX400
+                  </span>
+                  <span className="font-medium text-lg text-[#3F8CFF]">
+                    250.000 تومان
+                  </span>
+                </div>
+                <div className=" flex flex-row gap-7">
+                  <div className="flex flex-row gap-3">
+                    <div>
+                      <Image
+                        src={tikEmptySVG}
+                        width={24}
+                        height={24}
+                        alt="blue tik"
+                      />
+                    </div>
+                    <span className="text-[#676D7C] text-base">
+                      محصول پیشنهادی :
+                    </span>
+                  </div>
+                  <span className="font-medium text-lg">
+                    هنذفری شیائومی ردمی نوت پرو پلاس
+                  </span>
+                  <span className="font-medium text-lg text-[#3F8CFF]">
+                    50.000 تومان
+                  </span>
+                </div>
+              </div>
+              <hr />
+              <div className="flex flex-col w-full items-end mt-5 gap-5">
+                <div className="font-iran-yekan font-medium text-sm flex flex-row gap-4 items-center">
+                  <div className="text-white px-1 py-0.5 bg-red-600 w-max rounded">
+                    15 %
+                  </div>
+                  <div className="text-red-600 line-through">
+                    <span className="text-[#676D7C]">250.000 تومان</span>
+                  </div>
+                </div>
+                <div className="font-iran-yekan flex flex-row items-center gap-3">
+                  <span className="font-normal text-base text-[#676D7C]">
+                    (برای یک مورد)
+                  </span>
+                  <span className="font-bold text-2xl">185.000 تومان</span>
+                </div>
+                <button className="bg-[#3F8CFF] mt-4 w-4/12 py-2.5 text-white rounded drop-shadow-lg transition-all max-w-xs duration-300 hover:scale-105 focus:scale-105">
+                  افزودن به سبد خرید
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </MainLayout>
   );
