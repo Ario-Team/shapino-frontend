@@ -37,7 +37,6 @@ const MostViewedBox = ({ src, buy, view }) => {
           <span className="mr-5">{buy}</span> خرید
         </span>
         <span>
-          {" "}
           <span className="mr-5">{view}</span> بازدید
         </span>
       </div>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g fill="none" stroke="#20b854" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" data-name="vuesax/linear/tick-square">
+        <path d="M9 22h6c5 0 7-2 7-7V9c0-5-2-7-7-7H9C4 2 2 4 2 9v6c0 5 2 7 7 7Z" />
+        <path data-name="Vector" d="m7.75 12 2.83 2.83 5.67-5.66" />
+    </g>
+</svg>

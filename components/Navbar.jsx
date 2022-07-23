@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav
         className={`${classes.navbar} grid grid-cols-1 auto-rows-max auto-cols-max justify-items-center items-center w-full gap-6 sm:grid-cols-2 lg:grid-cols-3`}
       >
-        <Link href="/" passHref prefetch>
+        <Link href="/" passHref>
           <div className="cursor-pointer flex flex-row items-center justify-center gap-2 lg:justify-self-start lg:mr-5">
             <div className="w-8 h-max">
               <Image

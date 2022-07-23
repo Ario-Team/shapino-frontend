@@ -20,7 +20,7 @@ const PopularBrandsBox = ({ src, count, rate }) => {
           <span>محبوبیت</span>
           <span className="flex flex-row items-center mr-7">
             <FaStar className="text-yellow-500 ml-2" />
-            {rate}{" "}
+            {rate}
           </span>
         </div>
       </div>
