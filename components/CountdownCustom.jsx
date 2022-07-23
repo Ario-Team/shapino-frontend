@@ -10,7 +10,12 @@ const CountdownCustom = () => {
         <div className="flex items-center gap-2">
           <div className="w-[5.5rem] h-5 bg-orange-500"></div>
           <div>
-            <Image src={counterClockSVG} width={36} height={36} />
+            <Image
+              src={counterClockSVG}
+              width={36}
+              height={36}
+              alt="Counter Clock SVG"
+            />
           </div>
         </div>
         <div className="absolute -right-5">
