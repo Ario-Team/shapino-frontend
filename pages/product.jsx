@@ -17,10 +17,19 @@ import { AiFillBell, AiFillHeart, AiOutlineFacebook } from "react-icons/ai";
 import { FaStar, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
 import ProductItem from "../components/ProductItem";
+import PathNav from "../components/PathNav";
 
 const product = () => {
   return (
     <MainLayout>
+      <PathNav
+        path={[
+          "دیجی مارکت",
+          "صفحه محصول",
+          "کالای دیجیتال",
+          "موبایل شیائومی ردمی نوت",
+        ]}
+      />
       <Head>
         <title>شاپینو | موبایل شیائومی ردمی نوت 11 پرو پلاس WX400</title>
       </Head>
