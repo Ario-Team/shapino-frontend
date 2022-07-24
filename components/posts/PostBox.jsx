@@ -5,8 +5,8 @@ import postboxImage from "../../public/images/postBox.png";
 
 const PostBox = ({ title, description, date, view, src }) => {
   return (
-    <Link href="/post">
-      <div className="w-11/12 bg-white flex flex-col rounded-lg items-center mx-auto lg:flex-row lg:max-w-full lg:max-h-72 lg:items-center lg:mx-0 lg:py-6 lg:px-6">
+    <Link href="/post" passHref>
+      <div className="w-11/12 cursor-pointer bg-white flex flex-col rounded-lg items-center mx-auto lg:flex-row lg:max-w-full lg:max-h-72 lg:items-center lg:mx-0 lg:py-6 lg:px-6">
         <div className="w-full overflow-hidden rounded-2xl lg:min-w-[280px] lg:max-w-[280px]">
           <Image
             src={src}
