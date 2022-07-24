@@ -404,7 +404,7 @@ const product = () => {
                   </span>
                   <span className="font-bold text-2xl">185.000 تومان</span>
                 </div>
-                <button className="bg-[#3F8CFF] mt-4 w-4/12 py-2.5 text-white rounded drop-shadow-lg transition-all max-w-xs duration-300 hover:scale-105 focus:scale-105">
+                <button className="bg-[#3F8CFF] font-iran-yekan font-normal text-base mt-4 w-4/12 py-2.5 text-white rounded drop-shadow-lg transition-all max-w-xs duration-300 hover:scale-105 focus:scale-105">
                   افزودن به سبد خرید
                 </button>
               </div>
