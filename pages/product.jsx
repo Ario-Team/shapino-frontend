@@ -11,6 +11,7 @@ import tikSVG from "../public/svgs/tik.svg";
 import tikBlueSVG from "../public/svgs/tikBlue.svg";
 import tikEmptySVG from "../public/svgs/tikEmpty.svg";
 import productTruckSVG from "../public/svgs/productTruck.svg";
+import downloadSVG from "../public/svgs/download.svg";
 import flagSVG from "../public/svgs/flag.svg";
 import { AiFillBell, AiFillHeart, AiOutlineFacebook } from "react-icons/ai";
 import { FaStar, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
@@ -343,7 +344,7 @@ const product = () => {
                 <ProductItem />
               </div>
             </div>
-            <div className="bg-white h-[362px] w-full w-min-max px-11 py-7 flex flex-col">
+            <div className="bg-white min-h-[362px] h-max w-full w-min-max px-11 py-7 flex flex-col">
               <div className="font-iran-yekan w-full flex flex-col items-start gap-4 mt-8">
                 <div className=" flex flex-row gap-7">
                   <div className="flex flex-row gap-3">
@@ -411,8 +412,66 @@ const product = () => {
             </div>
           </div>
         </div>
+        <div className="bg-white py-7 flex flex-col gap-10 rounded px-8 w-11/12 sm:w-full">
+          <div className="flex flex-row gap-8 w-full overflow-x-hidden py-5 border-b-[1px] border-[#8A86A1] text-[#676D7C] font-iran-yekan font-normal text-base">
+            <span className="px-4 flex flex-row justify-center">
+              نقد و بررسی
+            </span>
+            <span className="text-black relative px-4 flex flex-row justify-center">
+              <div className="w-full h-[1px] bg-[#3F8CFF] absolute -bottom-5"></div>
+              مشخصات
+            </span>
+            <span className="px-4 flex flex-row justify-center">
+              دیدگاه کاربران
+            </span>
+            <span className="px-4 flex flex-row justify-center">
+              پرسش و پاسخ
+            </span>
+          </div>
+          <div className="bg-[#F9F9F9] flex flex-row justify-between border-[1px] border-[#ABB9CF] font-iran-yekan rounded w-full px-11 py-5">
+            <div className="flex flex-row gap-5 items-center font-normal">
+              <IoCopyOutline className="text-2xl text-[#3F8CFF]" />
+              <span className="text-lg">دانلود کاتالوگ محصول</span>
+              <span className="text-sm text-[#676D7C]">2.8 مگابایت حجم</span>
+            </div>
+            <div className="flex flex-row gap-3 items-center">
+              <span className="font-normal text-base text-[#20B854]">
+                دانلود
+              </span>
+              <Image
+                src={downloadSVG}
+                width={24}
+                height={24}
+                alt="Download icon"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-12 overflow-x-hidden gap-x-8 w-full">
+            <div className="col-span-4 flex flex-col gap-4">
+              <PropertiesItem text="جنس" />
+              <PropertiesItem text="ویژگی ظاهری" />
+              <PropertiesItem text="سایر توضیحات" />
+            </div>
+            <div className="col-span-8 flex flex-col gap-4">
+              <PropertiesItem text="تمام نخ طبیعی" />
+              <PropertiesItem text="بسیار نرم و لطیف" />
+              <PropertiesItem text="بدون آستین" />
+              <PropertiesItem text="خنک مناسب تابستان" />
+            </div>
+          </div>
+        </div>
       </div>
     </MainLayout>
+  );
+};
+
+const PropertiesItem = ({ text, className }) => {
+  return (
+    <div
+      className={`font-iran-yekan font-normal px-6 py-3 text-base bg-[#F2F0F1] transition-all duration-300 border-transparent border-[1px] rounded-lg hover:border-[#3F8CFF] ${className}`}
+    >
+      {text}
+    </div>
   );
 };
 
