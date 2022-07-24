@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar";
 
 const MainLayout = ({ children }) => {
   return (
-    <div className="xl:mx-20 2xl:mx-52 max-w-[2061px] xxl:mx-auto">
+    <div className="xl:mx-20 2xl:mx-52 max-w-[2061px] overflow-hidden xxl:mx-auto">
       <header>
         <Navbar />
         <hr className="my-5 w-full" />
