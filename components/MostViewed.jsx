@@ -3,7 +3,7 @@ import mostViewedImage from "../public/images/mostViewed.png";
 
 const MostViewed = () => {
   return (
-    <div className="w-11/12 mx-auto lg:w-full lg:mx-0">
+    <div className="w-11/12 mx-auto lg:w-full lg:mx-0 mt-8">
       <div className="w-full flex flex-row justify-between items-center">
         <span className="font-kalameh font-bold text-xl">
           پربازدید های هفته
@@ -12,7 +12,7 @@ const MostViewed = () => {
           مشاهده همه
         </span>
       </div>
-      <div className="grid my-16 place-items-center grid-cols-2 gap-y-1 gap-x-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xxl:grid-cols-6">
+      <div className="grid mt-6 mb-20 place-items-center grid-cols-2 gap-y-1 gap-x-1 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 xxl:grid-cols-6">
         <MostViewedBox />
         <MostViewedBox />
         <MostViewedBox />

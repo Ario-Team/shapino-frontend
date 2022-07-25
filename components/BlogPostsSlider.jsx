@@ -6,6 +6,7 @@ const BlogPostsSlider = () => {
   return (
     <BaseSlider
       title="وبلاگ مارکت"
+      className="mt-6"
       customStarterView={1}
       customBreakpoints={{
         0: {

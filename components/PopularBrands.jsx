@@ -6,6 +6,7 @@ const PopularBrands = () => {
   return (
     <BaseSlider
       title={"محبوبترین برند ها"}
+      className="mt-5"
       customBreakpoints={{
         1: {
           slidesPerView: 2,

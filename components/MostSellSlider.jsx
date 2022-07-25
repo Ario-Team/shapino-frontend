@@ -4,7 +4,7 @@ import ProductItem from "./ProductItem";
 
 const MostSellSlider = () => {
   return (
-    <BaseSlider title="پرفروش ترین ها">
+    <BaseSlider title="پرفروش ترین ها" className="mt-12">
       <SwiperSlide>
         <ProductItem />
       </SwiperSlide>

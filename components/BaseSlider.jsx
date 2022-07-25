@@ -7,9 +7,12 @@ const BaseSlider = ({
   children,
   customBreakpoints,
   customStarterView,
+  className,
 }) => {
   return (
-    <div className="w-11/12 mt-12 mx-auto flex flex-col gap-5 lg:mx-0 lg:w-full">
+    <div
+      className={`w-11/12 mx-auto flex flex-col lg:mx-0 lg:w-full ${className}`}
+    >
       <div className="w-full flex flex-row justify-between items-center">
         <span className="font-kalameh font-bold text-xl">{title}</span>
         <span className="font-iran-yekan font-medium text-base cursor-pointer text-[#3F8CFF] transition-all duration-300 hover:drop-shadow-md">

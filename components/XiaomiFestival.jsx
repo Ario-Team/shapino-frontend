@@ -5,7 +5,7 @@ import powerbankImage from "../public/images/devices/powerbank.png";
 
 const XiaomiFestival = () => {
   return (
-    <div className="bg-[#FF6900] flex justify-around px-24 rounded-lg w-11/12 py-14 mx-auto lg:w-full">
+    <div className="bg-[#FF6900] flex justify-around px-24 rounded-lg w-11/12 py-14 mx-auto my-4 lg:w-full">
       <div className="grid lg:grid-cols-4 place-conent-center place-items-center ">
         <div className="font-kalameh font-bold w-full flex flex-col gap-6 items-center justify-center lg:col-span-4 lg:flex-row lg:w-max">
           <div className="flex flex-row font-extrabold items-center w-max lg:gap-5 lg:flex-col">

@@ -4,7 +4,7 @@ import ProductItem from "./ProductItem";
 
 const ProductDailyRecommendSlider = () => {
   return (
-    <BaseSlider title="پیشنهاد روز">
+    <BaseSlider title="پیشنهاد روز" className="mt-12">
       <SwiperSlide>
         <ProductItem />
       </SwiperSlide>
