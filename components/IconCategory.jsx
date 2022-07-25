@@ -74,7 +74,7 @@ const IconCategory = () => {
 
 const SliderItem = ({ title, src, count }) => {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 cursor-pointer">
+    <div className="flex flex-col items-center justify-center gap-3 cursor-pointer mt-12 mb-7">
       <div className="group peer w-max flex flex-col items-center gap-3">
         <div className="bg-white w-max p-2 rounded-2xl transition-colors duration-300 border-2 border-transparent group-hover:border-blue-500">
           <div className="bg-gray-100 px-3.5 py-3 rounded-xl flex items-center justify-center">
@@ -83,7 +83,7 @@ const SliderItem = ({ title, src, count }) => {
         </div>
         <span className="font-iran-yekan font-medium text-base">{title}</span>
       </div>
-      <div className="opacity-0 transition-all duration-300 mt-3 mb-7 peer-hover:opacity-100">
+      <div className="opacity-0 transition-all duration-300 mb-7 peer-hover:opacity-100">
         <span className="font-iran-yekan font-medium text-base text-blue-500 ">
           {count} کالا
         </span>
