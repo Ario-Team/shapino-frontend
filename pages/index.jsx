@@ -25,7 +25,7 @@ export default function Home() {
           <IndexSlider />
           <IconCategory />
           <OfferedProducts />
-          <div className="flex flex-col items-center gap-5 w-full justify-between my-10 lg:flex-row">
+          <div className="flex flex-col items-center gap-5 w-full justify-between mt-16 mb-5 lg:flex-row">
             <SonyBox />
             <JeanBrandBox />
           </div>
