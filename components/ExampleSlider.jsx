@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FiArrowLeft } from "react-icons/fi";
-import manSVG from "../public/svgs/man.svg";
+import manImage from "../public/images/man.png";
 import dotsSVG from "../public/svgs/dots.svg";
 
 const ExampleSlider = () => {
@@ -26,7 +26,7 @@ const ExampleSlider = () => {
             <span className="font-kalameh font-black text-5xl">adidas</span>
           </div>
         </div>
-        <div className="bg-[#C47A1B] col-span-2 flex flex-col items-center justify-center gap-5 lg:col-span-1">
+        <div className="bg-[#C47A1B] col-span-2 flex flex-col items-center justify-center lg:justify-end lg:pb-20 gap-5 lg:col-span-1">
           <hr className="bg-white my-2 h-[2px] w-1/2" />
           <div className="flex flex-col items-center justify-center gap-6 lg:flex-row">
             <div>
@@ -53,9 +53,15 @@ const ExampleSlider = () => {
           </div>
         </div>
       </div>
-      <div className="hidden lg:block relative pt-60">
+      <div className="invisible lg:visible relative">
         <div className="">
-          <Image src={manSVG} width={213} height={400} alt="Man picture" />
+          <Image
+            className=""
+            src={manImage}
+            width={213}
+            height={400}
+            alt="Man picture"
+          />
         </div>
       </div>
     </div>
