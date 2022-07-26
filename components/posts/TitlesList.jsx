@@ -2,11 +2,14 @@ import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 const TitlesList = () => {
   return (
-    <div className="flex flex-col items-center py-8 px-12 bg-white w-max mx-auto rounded-lg h-max">
+    <div className="flex flex-col items-center py-8 px-12 bg-white w-max mx-auto rounded-lg h-max lg:mx-0">
       <span className="font-iran-yekan font-normal text-lg bg-[#707070]/5 px-16 py-3 opacity-80 transition-opacity duration-300 hover:opacity-100">
         فهرست عناوین مقاله
       </span>
-      <div className="mt-10 flex flex-col items-start w-full gap-6">
+      <span className="font-iran-yekan font-normal text-base text-[#3F8CFF] mt-6 border-[#3F8CFF] border-[1px] rounded px-6 py-0.5">
+        5 دقیقه مدت مطالعه
+      </span>
+      <div className="mt-8 flex flex-col items-start w-full gap-6">
         <TitleItem title="استعلام ثبت برند" active />
         <TitleItem title="جستجوی علائم تجاری" />
         <TitleItem title="جستجوی علامت تجاری" />

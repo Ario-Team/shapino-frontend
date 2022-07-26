@@ -12,7 +12,7 @@ import { BsArrowReturnLeft } from "react-icons/bs";
 
 const BlogContent = () => {
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col gap-3">
       <div className="font-iran-yekan flex flex-row justify-between items-end">
         <div className="flex flex-col gap-2">
           <span className="font-normal text-base text-[#676D7C]">
@@ -20,7 +20,7 @@ const BlogContent = () => {
           </span>
           <h1 className="font-bold text-2xl">خرید محصولات دیجیتال</h1>
         </div>
-        <div className="text-[#7C8DA6] font-normal text-lg flex flex-row items-center gap-4">
+        <div className="text-[#7C8DA6] font-normal text-lg flex flex-row items-center gap-14">
           <span>8 خرداد 1401</span>
           <div className="flex flex-row gap-5 border-[1px] border-[#ABB9CF] px-6 py-0 rounded-md">
             <span className="flex flex-row gap-2 items-center">
@@ -34,8 +34,8 @@ const BlogContent = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 my-7">
-        <p className="font-iran-yekan text-lg font-normal text-black leading-normal text-right">
+      <div className="prose prose-2xl w-full prose-ul:list-item prose-ul:list-disc prose-ul:mr-7 :text-blue-500 my-7 prose-p:font-iran-yekan prose-p:text-lg prose-p:font-normal prose-p:text-[#111111] prose-p:leading-7 prose-p:pb-5 prose-img:w-11/12">
+        <p>
           برای استعلام برند قبل از ثبت چه در وب سایت ما و چه از طریق استعلام
           برند سایت مالکیت معنوی باید حتما بدانید که حتی اگر در فرآیند استعلام
           علامت تجاری، اسم مشابهی پیدا نشد به معنی ثبت صد در صدی نام درخواستی
@@ -46,8 +46,8 @@ const BlogContent = () => {
           توانید فرآیند ثبت برند را به موسسه ما واگذار کنید که شامل هزینه می
           باشد
         </p>
-        <Image src={postImage} width={200} height={500} alt="post image" />
-        <p className="font-iran-yekan text-lg font-normal text-black leading-normal text-right">
+        <Image src={postImage} layout="responsive" alt="post image" />
+        <p>
           برای استعلام برند قبل از ثبت چه در وب سایت ما و چه از طریق استعلام
           برند سایت مالکیت معنوی باید حتما بدانید که حتی اگر در فرآیند استعلام
           علامت تجاری، اسم مشابهی پیدا نشد به معنی ثبت صد در صدی نام درخواستی
@@ -57,44 +57,44 @@ const BlogContent = () => {
           انجام می دهیم. بعد از اعلام پاسخ استعلام، اگر تمایل داشتید می توانید
           فرآیند ثبت برند را به موسسه ما واگذار کنید که شامل هزینه می باشد
         </p>
-        <ul className="list-disc text-[#3F8CFF] flex flex-col gap-6">
+        <ul className="marker:text-[#3F8CFF] text-sm">
           <li>
-            <span className="text-lg font-iran-yekan font-medium text-black">
+            <span className="font-iran-yekan font-medium text-lg">
               جستجوی علامت تجاری
             </span>
           </li>
           <li>
-            <span className="text-lg font-iran-yekan font-medium text-black">
+            <span className="font-iran-yekan font-medium text-lg">
               استعلام علامت تجاری
             </span>
           </li>
           <li>
-            <span className="text-lg font-iran-yekan font-medium text-black">
+            <span className="font-iran-yekan font-medium text-lg">
               استعلام برندهای ثبت شده در ایران
             </span>
           </li>
         </ul>
-        <Image src={postImage} width={200} height={500} alt="post image" />
-        <p className="font-iran-yekan text-lg font-normal text-black leading-normal text-right">
+        <Image src={postImage} layout="responsive" alt="post image" />
+        <p>
           برای استعلام برند قبل از ثبت چه در وب سایت ما و چه از طریق استعلام
           برند سایت مالکیت معنوی باید حتما بدانید که حتی اگر در فرآیند استعلام
           علامت تجاری، اسم مشابهی پیدا نشد به معنی ثبت صد در صدی نام درخواستی
           شما نمی باشد اما به شما این اطمینان را می دهیم که تا حد زیادی سعی کرده
-          ایم{" "}
+          ایم
         </p>
       </div>
       <div className="flex flex-row w-full justify-between items-center">
         <span className="font-kalameh font-bold text-xl self-start">
           اشتراک گذاری مقاله
         </span>
-        <div className="flex flex-row gap-4 border-[1px] border-[#ABB9CF] rounded-xl w-max py-2 px-16 items-center">
-          <div className="border-[1px] transition-all duration-300 border-transparent hover:border-[#3F8CFF] rounded-md w-max p-1">
+        <div className="flex flex-row-reverse gap-4 border-[1px] border-[#ABB9CF] rounded-xl w-max py-2 px-12 items-center">
+          <div className="border-[1px] transition-all duration-300 border-transparent cursor-pointer hover:border-[#3F8CFF] rounded-md w-max p-1">
             <FaWhatsapp className="text-2xl text-[#676D7C] transition-all duration-300  hover:text-[#3F8CFF] hover:scale-105" />
           </div>
-          <div className="border-[1px] transition-all duration-300 border-transparent hover:border-[#3F8CFF] rounded-md w-max p-1">
+          <div className="border-[1px] transition-all duration-300 border-transparent cursor-pointer hover:border-[#3F8CFF] rounded-md w-max p-1">
             <FaTelegramPlane className="text-2xl text-[#676D7C] transition-all duration-300  hover:text-[#3F8CFF] hover:scale-105" />
           </div>
-          <div className="border-[1px] transition-all duration-300 border-transparent hover:border-[#3F8CFF] rounded-md w-max p-1">
+          <div className="border-[1px] transition-all duration-300 border-transparent cursor-pointer hover:border-[#3F8CFF] rounded-md w-max p-1">
             <FaInstagram className="text-2xl text-[#676D7C] transition-all duration-300  hover:text-[#3F8CFF] hover:scale-105" />
           </div>
         </div>
@@ -106,7 +106,7 @@ const BlogContent = () => {
           مشاوران ما با شما تماس بگیرند
         </span>
       </div>
-      <div>
+      <div className="mt-8">
         <form
           action="#"
           className="grid grid-cols-1 font-iran-yekan font-normal text-base sm:grid-cols-2 bg-white rounded py-8 px-16 gap-y-10 gap-x-10"

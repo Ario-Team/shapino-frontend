@@ -12,7 +12,7 @@ const post = () => {
         <div className="w-11/12 sm:w-8/12">
           <BlogContent />
         </div>
-        <div className="flex flex-col gap-5 w-4/12">
+        <div className="flex flex-col items-end gap-5 w-4/12">
           <TitlesList />
           <RecentPosts />
         </div>
