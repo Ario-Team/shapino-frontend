@@ -55,6 +55,10 @@ const BaseSlider = ({
                   slidesPerView: 6,
                   spaceBetween: 250,
                 },
+                1920: {
+                  slidesPerView: 6,
+                  spaceBetween: 15,
+                },
                 2064: {
                   slidesPerView: 9,
                   spaceBetween: 250,

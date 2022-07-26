@@ -13,7 +13,7 @@ const ProductItem = ({
 }) => {
   return (
     <Link href="/product" passHref>
-      <div className="relative w-max cursor-pointer bg-white px-9 flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-[#FF6230]/30 hover:shadow-md ">
+      <div className="relative z-10 hover:z-20 w-max cursor-pointer bg-white px-9 flex flex-col items-center transition-all duration-300 hover:scale-105 hover:shadow-[#FF6230]/30 hover:shadow-md ">
         <div className="absolute left-6 top-5 flex flex-row gap-2 items-center">
           <FaStar className="text-yellow-400" />
           {rate}
