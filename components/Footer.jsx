@@ -18,7 +18,7 @@ import samandehiSVG from "../public/svgs/samandehi.svg";
 const Footer = () => {
   return (
     <footer className="bg-white rounded-t-2xl h-max lg:rounded-t-xl w-full">
-      <div className="grid grid-cols-2 place-items-center gap-y-10 py-6 pt-14 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full">
+      <div className="grid grid-cols-2 place-items-center gap-y-10 py-6 pt-8 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full">
         <IconBox
           className="col-span-2 sm:col-span-1 lg:col-span-4 xl:col-span-1"
           src={shieldSVG}
