@@ -46,7 +46,7 @@ const Menu = () => {
             return (
               <SwiperSlide
                 key={key}
-                className="w-max flex flex-row gap-2 justify-center items-center"
+                className="w-max relative flex flex-row gap-2 justify-center items-center"
               >
                 {item == "دسته بندی" ? <HiMenuAlt1 /> : null}
                 <span>{item}</span>
@@ -63,12 +63,15 @@ const MenuItem = ({ name }) => {
   const isCategory = name == "دسته بندی";
   return (
     <li
-      className={`font-iran-yekan font-normal flex flex-row items-center gap-2 text-black transition-opacity duration-300 cursor-pointer opacity-80 hover:opacity-100 ${
+      className={`font-iran-yekan relative font-normal flex flex-row items-center gap-2 text-black transition-opacity duration-300 cursor-pointer opacity-80 hover:opacity-100 ${
         isCategory ? "hidden lg:flex" : " "
       }`}
     >
       {isCategory ? <HiMenuAlt1 className="rotate-180" /> : null}
       {name}
+      {name == "پرفروش ترین" ? (
+        <div className="w-1 h-1 rounded-full bg-[#3F8CFF] absolute -bottom-3 left-[50%]" />
+      ) : null}
     </li>
   );
 };

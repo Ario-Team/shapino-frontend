@@ -34,7 +34,7 @@ const Navbar = () => {
                 021-6420
               </span>
             </Link>
-            -
+            <div className="w-2 h-[1px] self-center bg-[#7C8DA6]" />
             <Link href="tel:+9809906198476" passHref>
               <span className="font-iran-yekan font-extrabold text-base text-gray-700 cursor-pointer transition-color duration-300 hover:text-gray-900">
                 09906198476
@@ -56,7 +56,7 @@ const Navbar = () => {
             placeholder="جستجو بیش از 8 هزار کالا"
             className="font-iran-yekan font-normal bg-transparent outline-none border-2 text-sm pr-2 border-[#7C8DA6]/30 rounded-lg w-full h-14 transition-colors duration-300 hover:border-[#7C8DA6]/50 focus:border-[#7C8DA6]/50"
           />
-          <div className=" flex justify-center items-center w-max h-max absolute top-3 left-3 bg-gray-400 bg-opacity-80 px-3 py-1.5 rounded-lg transition-colors duration-300 cursor-pointer hover:bg-gray-500">
+          <div className=" flex justify-center items-center w-max h-max absolute top-3 left-3 bg-[#ABB9CF]/95 bg-opacity-80 px-3 py-1.5 rounded-lg transition-colors duration-300 cursor-pointer hover:bg-[#ABB9CF]/100">
             <Image src={searchSVG} width={20} height={20} alt="search icon" />
           </div>
         </div>
