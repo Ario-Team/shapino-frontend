@@ -20,7 +20,7 @@ export default function Home() {
         <title>شاپیفای</title>
       </Head>
       <MainLayout>
-        <div className="mb-5">
+        <div className="mb-5 z-10">
           <Menu />
           <IndexSlider />
           <IconCategory />

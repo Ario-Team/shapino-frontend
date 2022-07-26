@@ -3,7 +3,7 @@ import { HiMenuAlt1, HiMenuAlt2, HiMenuAlt3, HiMenuAlt4 } from "react-icons/hi";
 import { useEffect, useState } from "react";
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import classes from "../styles/components/Menu/index.module.scss";
+import DropdownMenu from "./DropdownMenu";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -62,17 +62,26 @@ const Menu = () => {
 const MenuItem = ({ name }) => {
   const isCategory = name == "دسته بندی";
   return (
-    <li
-      className={`font-iran-yekan relative font-normal flex flex-row items-center gap-2 text-black transition-opacity duration-300 cursor-pointer opacity-80 hover:opacity-100 ${
-        isCategory ? "hidden lg:flex" : " "
-      }`}
-    >
-      {isCategory ? <HiMenuAlt1 className="rotate-180" /> : null}
-      {name}
-      {name == "پرفروش ترین" ? (
-        <div className="w-1 h-1 rounded-full bg-[#3F8CFF] absolute -bottom-3 left-[50%]" />
+    <>
+      <li
+        className={`peer font-iran-yekan relative font-normal flex flex-row items-center gap-2 text-black transition-opacity duration-300 cursor-pointer opacity-80 hover:opacity-100 ${
+          isCategory ? "hidden lg:flex" : " "
+        }`}
+      >
+        {isCategory ? <HiMenuAlt1 className="rotate-180" /> : null}
+
+        {name}
+        {name == "پرفروش ترین" ? (
+          <div className="w-1 h-1 rounded-full bg-[#3F8CFF] absolute -bottom-3 left-[50%]" />
+        ) : null}
+      </li>
+      {isCategory ? (
+        <div className="invisible z-40 absolute top-[9.5rem] opacity-0 right-[11vw] transition-all duration-300 w-max hover:visible hover:opacity-100 peer-hover:visible peer-hover:opacity-100">
+          <DropdownMenu />
+          visible hover:opacity-100{" "}
+        </div>
       ) : null}
-    </li>
+    </>
   );
 };
 export default Menu;
