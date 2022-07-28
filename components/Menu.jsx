@@ -78,7 +78,6 @@ const MenuItem = ({ name }) => {
       {isCategory ? (
         <div className="invisible z-40 absolute top-[9.5rem] opacity-0 right-[11vw] transition-all duration-300 w-max hover:visible hover:opacity-100 peer-hover:visible peer-hover:opacity-100">
           <DropdownMenu />
-          visible hover:opacity-100{" "}
         </div>
       ) : null}
     </>
