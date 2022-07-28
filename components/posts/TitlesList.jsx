@@ -32,7 +32,7 @@ const TitleItem = ({ title, active }) => {
         className={`text-xl ${active ? "text-[#3F8CFF]" : "text-[#ABB9CF]"}`}
       />
       <span
-        className={`text-[#676D7C] font-normal text0lg font-iran-yekan transition-all duration-300 hover:text-[#111111]`}
+        className={`text-[#676D7C] font-normal text0lg font-iran-yekan transition-all duration-300 hover:text-[#111111] cursor-pointer`}
       >
         {title}
       </span>
