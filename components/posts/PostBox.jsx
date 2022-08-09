@@ -21,7 +21,7 @@ const PostBox = ({ title, description, date, view, src }) => {
           <p className="font-normal text-base text-[#676D7C] lg:max-w-2xl">
             {description}
           </p>
-          <div className="ml-5 flex flex-row items-center gap-10 self-end font-medium text-[#676D7C] text-base">
+          <div className="ml-5 mt-10 flex flex-row items-center gap-10 self-end font-medium text-[#676D7C] text-base">
             <span>{date}</span>
             <span className="flex flex-row gap-2 items-center">
               <FaEye />

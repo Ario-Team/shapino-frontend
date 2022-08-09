@@ -8,8 +8,6 @@ import xiaomiLogoImage from "../public/images/xiaomiLogo.png";
 import bellSVG from "../public/svgs/bell.svg";
 import calendarSVG from "../public/svgs/calendar.svg";
 import tikSVG from "../public/svgs/tik.svg";
-import tikBlueSVG from "../public/svgs/tikBlue.svg";
-import tikEmptySVG from "../public/svgs/tikEmpty.svg";
 import productTruckSVG from "../public/svgs/productTruck.svg";
 import downloadSVG from "../public/svgs/download.svg";
 import flagSVG from "../public/svgs/flag.svg";
@@ -18,6 +16,7 @@ import { FaStar, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { IoCopyOutline } from "react-icons/io5";
 import ProductItem from "../components/ProductItem";
 import PathNav from "../components/PathNav";
+import Tik from "../components/tik";
 
 const product = () => {
   return (
@@ -358,12 +357,7 @@ const product = () => {
                 <div className=" flex flex-row gap-7">
                   <div className="flex flex-row gap-3">
                     <div>
-                      <Image
-                        src={tikBlueSVG}
-                        width={24}
-                        height={24}
-                        alt="blue tik"
-                      />
+                      <Tik checked />
                     </div>
                     <span className="text-[#676D7C] text-base">
                       این محصول :
@@ -379,12 +373,7 @@ const product = () => {
                 <div className=" flex flex-row gap-7">
                   <div className="flex flex-row gap-3">
                     <div>
-                      <Image
-                        src={tikEmptySVG}
-                        width={24}
-                        height={24}
-                        alt="blue tik"
-                      />
+                      <Tik />
                     </div>
                     <span className="text-[#676D7C] text-base">
                       محصول پیشنهادی :
@@ -443,7 +432,7 @@ const product = () => {
               <span className="text-lg">دانلود کاتالوگ محصول</span>
               <span className="text-sm text-[#676D7C]">2.8 مگابایت حجم</span>
             </div>
-            <div className="flex flex-row gap-3 items-center">
+            <div className="flex flex-row gap-3 items-center cursor-pointer">
               <span className="font-normal text-base text-[#20B854]">
                 دانلود
               </span>
